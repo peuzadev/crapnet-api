@@ -30,6 +30,6 @@ app.use((req, res, next) => {
   });
   next();
 });
-app.listen(port, () => {
-  console.log(`Servidor rodando em http://localhost:${port}`);
+app.listen(process.env.PORT, () => {
+  console.log(`Servidor rodando em http://localhost:${process.env.PORT}`);
 });
